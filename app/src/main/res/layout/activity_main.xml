@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="horizontal">
+
+            <!-- Back icon -->
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_back"/>
+
+            <!-- User Name -->
+            <TextView
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Sok Sao"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="20dp">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    android:background="@color/red"
+                    android:textAlignment="center"
+                    android:text="9+"/>
+            </androidx.cardview.widget.CardView>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_down"/>
+
+            <!-- Edit icon -->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/ic_edit"/>
+
+            <!-- Search icon -->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_search"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Cover Image -->
+            <ImageView
+                android:id="@+id/coverImage"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"/>
+
+            <!-- Circular Profile Image -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-140dp"
+                android:layout_marginLeft="-120dp"
+                tools:ignore="MissingClass" />
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-120dp"
+                android:text="Sok Sao"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-120dp"
+                android:text="3.2k friends"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-120dp"
+                android:text="Love travelling"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:text="+ Add Story"
+                android:textAlignment="center"
+                android:background="@color/blue"
+                android:textColor="@color/white"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="Edit profile"
+                android:textAlignment="center"
+                android:background="@color/grey"
+                android:textColor="@color/white"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="..."
+                android:textAlignment="center"
+                android:background="@color/grey"
+                android:textColor="@color/white"
+                android:paddingTop="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_work"
+                android:layout_marginLeft="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:padding="10dp"
+                android:text="Study at Royal University of Phnom Penh"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_heart"
+                android:layout_marginLeft="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:padding="10dp"
+                android:text="Single"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_more"
+                android:layout_marginLeft="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:padding="10dp"
+                android:text="See your About Info"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="30dp"
+            android:text="Edit Public Details"
+            android:textAlignment="center"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="40dp"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

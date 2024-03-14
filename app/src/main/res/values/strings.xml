@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">madQuiz1</string>
+    <string name="name">Sok Sao</string>
+    <string name="status">Love travelling</string>
+    <string name="friends">Friends</string>
+    <string name="university">University</string>
+    <string name="add_to_story">Add to Story</string>
+    <string name="edit_profile">Edit Profile</string>
+
+
+</resources>
